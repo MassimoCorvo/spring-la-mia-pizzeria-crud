@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Le nostre pizze</title>
+    </head>
+
+    <body>
+        <div th:each="pizza : ${pizze}">
+            <h1>[[${pizza.getNome()}]]</h1>
+            <img th:src="${pizza.getFoto()}" >
+        </div>
+    </body>
+</html>
